@@ -1,0 +1,23 @@
+[project]
+name = "langchain-course1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alfredo Limin", email = "61728192+jjlimin@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.1",
+    "langchain-ollama>=1.1.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langchain-course1 = "langchain_course1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
